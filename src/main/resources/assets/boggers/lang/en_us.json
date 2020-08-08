@@ -1,8 +1,23 @@
-{
-    "block.boggers.cypress_sapling": "Cypress Sapling",
-    "block.boggers.cypress_planks": "Cypress Planks",
-    "block.boggers.cypress_leaves": "Cypress Leaves",
-    "block.boggers.cypress_log": "Cypress Log",
 
+{
+    "block.boggers.cypress_planks": "Cypress Planks",
+    "block.boggers.cypress_sapling": "Cypress Sapling",
+    "block.boggers.cypress_door": "Cypress Door",
+    "block.boggers.cypress_wood": "Cypress Wood",
+    "block.boggers.cypress_log": "Cypress Log",
+    "block.boggers.stripped_cypress_log": "Stripped Cypress Log",
+    "block.boggers.stripped_cypress_wood": "Stripped Cypress Wood",
+    "block.boggers.cypress_leaves": "Cypress Leaves",
+    "block.boggers.cypress_slab": "Cypress Slab",
+    "block.boggers.cypress_stairs": "Cypress Stairs",
+    "block.boggers.cypress_sign": "Cypress Sign",
+    "block.boggers.cypress_wall_sign": "Cypress Wall Sign",
+    "block.boggers.cypress_pressure_plate": "Cypress Pressure Plate",
+    "block.boggers.cypress_button": "Cypress Button",
+    "block.boggers.cypress_fence": "Cypress Fence",
+    "block.boggers.cypress_fence_gate": "Cypress Fence Gate",
+    "block.boggers.potted_cypress_sapling": "Potted Cypress Sapling",
+    "item.boggers.cypress_boat": "Cypress Boat"
+	
     "itemGroup.boggers_item_group": "Boggers"
 }

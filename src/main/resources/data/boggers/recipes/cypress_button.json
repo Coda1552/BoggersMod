@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "boggers:cypress_planks"
+    }
+  ],
+  "result": {
+    "item": "boggers:cypress_button"
+  }
+}
