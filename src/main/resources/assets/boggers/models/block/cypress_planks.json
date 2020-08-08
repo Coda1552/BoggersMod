@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "boggers:blocks/cypress_plank"
+    "all": "boggers:block/cypress_planks"
   }
 }

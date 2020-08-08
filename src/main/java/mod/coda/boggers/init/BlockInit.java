@@ -1,32 +1,26 @@
 package mod.coda.boggers.init;
 
 import mod.coda.boggers.Boggers;
+import mod.coda.boggers.objects.blocks.CypressSaplingBlock;
+import mod.coda.boggers.world.feature.CypressTree;
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.LogBlock;
+import net.minecraft.block.material.MaterialColor;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
-@ObjectHolder(Boggers.MOD_ID)
-@Mod.EventBusSubscriber(modid = Boggers.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockInit {
-    public static final Block cypress_plank = null;
 
-    @SubscribeEvent
-    public static void registerBlocks(final RegistryEvent.Register<Block> event)
-    {
-        event.getRegistry().register(new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("cypress_plank"));
-    }
+    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Boggers.MOD_ID);
 
-    @SubscribeEvent
-    public static void registerItemBlocks(final RegistryEvent.Register<Item> event)
-    {
-        event.getRegistry().register(new BlockItem(cypress_plank, new Item.Properties()).setRegistryName("cypress_plank"));
-    }
+    public static final RegistryObject<Block> CYPRESS_SAPLING = BLOCKS.register("cypress_sapling", () -> new CypressSaplingBlock(() -> new CypressTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> CYPRESS_LOG = BLOCKS.register("cypress_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
 
+    public static final RegistryObject<Block> CYPRESS_LEAVES = BLOCKS.register("cypress_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
+
+    public static final RegistryObject<Block> CYPRESS_PLANKS = BLOCKS.register("cypress_planks", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
 }
