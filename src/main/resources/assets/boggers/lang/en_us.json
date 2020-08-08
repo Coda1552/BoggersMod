@@ -1,4 +1,8 @@
 {
+    "block.boggers.cypress_sapling": "Cypress Sapling",
     "block.boggers.cypress_planks": "Cypress Planks",
     "block.boggers.cypress_leaves": "Cypress Leaves",
-    "block.boggers.cypress_log": "Cypress Log"}
+    "block.boggers.cypress_log": "Cypress Log",
+
+    "itemGroup.boggers_item_group": "Boggers"
+}

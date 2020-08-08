@@ -17,10 +17,7 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Boggers.MOD_ID);
 
     public static final RegistryObject<Block> CYPRESS_SAPLING = BLOCKS.register("cypress_sapling", () -> new CypressSaplingBlock(() -> new CypressTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
-
     public static final RegistryObject<Block> CYPRESS_LOG = BLOCKS.register("cypress_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
-
     public static final RegistryObject<Block> CYPRESS_LEAVES = BLOCKS.register("cypress_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
-
     public static final RegistryObject<Block> CYPRESS_PLANKS = BLOCKS.register("cypress_planks", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
 }
