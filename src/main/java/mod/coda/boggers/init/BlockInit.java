@@ -3,8 +3,8 @@ package mod.coda.boggers.init;
 import mod.coda.boggers.Boggers;
 import mod.coda.boggers.objects.blocks.*;
 import mod.coda.boggers.world.feature.CypressTree;
+import mod.coda.boggers.world.feature.CypressTreeFeature;
 import net.minecraft.block.*;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,7 +14,7 @@ public class BlockInit {
 
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Boggers.MOD_ID);
 
-    public static final RegistryObject<Block> CYPRESS_SAPLING = BLOCKS.register("cypress_sapling", () -> new CypressSaplingBlock(() -> new CypressTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> CYPRESS_SAPLING = BLOCKS.register("cypress_sapling", () -> new SaplingBlock(new CypressTree(), Block.Properties.from(Blocks.OAK_SAPLING)){});
     public static final RegistryObject<Block> CYPRESS_LOG = BLOCKS.register("cypress_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> CYPRESS_WOOD = BLOCKS.register("cypress_wood", () -> new Block(Block.Properties.from(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> STRIPPED_CYPRESS_LOG = BLOCKS.register("stripped_cypress_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.STRIPPED_OAK_LOG)));

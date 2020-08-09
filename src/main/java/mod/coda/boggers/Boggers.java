@@ -2,6 +2,7 @@ package mod.coda.boggers;
 
 import mod.coda.boggers.init.BiomeInit;
 import mod.coda.boggers.init.BlockInit;
+import mod.coda.boggers.init.FeatureInit;
 import mod.coda.boggers.init.ItemInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
