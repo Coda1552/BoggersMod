@@ -12,11 +12,13 @@
     "block.boggers.cypress_stairs": "Cypress Stairs",
     "block.boggers.cypress_sign": "Cypress Sign",
     "block.boggers.cypress_wall_sign": "Cypress Wall Sign",
+    "block.boggers.cypress_trapdoor": "Cypress Trapdoor",
     "block.boggers.cypress_pressure_plate": "Cypress Pressure Plate",
     "block.boggers.cypress_button": "Cypress Button",
     "block.boggers.cypress_fence": "Cypress Fence",
     "block.boggers.cypress_fence_gate": "Cypress Fence Gate",
     "block.boggers.potted_cypress_sapling": "Potted Cypress Sapling",
+
     "item.boggers.cypress_boat": "Cypress Boat",
 	
     "itemGroup.boggers_item_group": "Boggers"
