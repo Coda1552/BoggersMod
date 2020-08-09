@@ -17,7 +17,7 @@
     "block.boggers.cypress_fence": "Cypress Fence",
     "block.boggers.cypress_fence_gate": "Cypress Fence Gate",
     "block.boggers.potted_cypress_sapling": "Potted Cypress Sapling",
-    "item.boggers.cypress_boat": "Cypress Boat"
+    "item.boggers.cypress_boat": "Cypress Boat",
 	
     "itemGroup.boggers_item_group": "Boggers"
 }

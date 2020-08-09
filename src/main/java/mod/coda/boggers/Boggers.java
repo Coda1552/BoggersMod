@@ -41,22 +41,10 @@ public class Boggers {
     private void doClientStuff(final FMLCommonSetupEvent event) {
     }
 
-    @SubscribeEvent
-    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
-        final IForgeRegistry<Item> registry = event.getRegistry();
-        BlockInit.BLOCKS.getEntries().stream().filter(block -> !(block.get() instanceof FlowingFluidBlock)).map(RegistryObject::get).forEach(block -> {
-            final Item.Properties properties = new Item.Properties().group(ItemGroup.BUILDING_BLOCKS);
-            final BlockItem blockItem = new BlockItem(block, properties);
-            blockItem.setRegistryName(block.getRegistryName());
-            registry.register(blockItem);
-        });
-    }
-
     public final static ItemGroup GROUP = new ItemGroup("boggers_item_group") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(BlockInit.CYPRESS_PLANKS.get());
         }
     };
-
 }
