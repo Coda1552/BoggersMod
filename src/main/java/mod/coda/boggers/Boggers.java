@@ -1,21 +1,18 @@
 package mod.coda.boggers;
 
+import mod.coda.boggers.init.BiomeInit;
 import mod.coda.boggers.init.BlockInit;
 import mod.coda.boggers.init.ItemInit;
-import net.minecraft.block.FlowingFluidBlock;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod(Boggers.MOD_ID)
 public class Boggers {
@@ -30,9 +27,15 @@ public class Boggers {
 
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        BiomeInit.BIOMES.register(modEventBus);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterBiomes(final RegistryEvent.Register<Biome>event) {
+        BiomeInit.registerBiomes();
     }
 
     private void setup(final FMLCommonSetupEvent event) {

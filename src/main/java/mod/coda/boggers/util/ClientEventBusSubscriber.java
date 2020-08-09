@@ -13,8 +13,6 @@ public class ClientEventBusSubscriber {
 
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
-
         RenderTypeLookup.setRenderLayer(BlockInit.CYPRESS_TRAPDOOR.get(), RenderType.getCutout());
-
     }
 }

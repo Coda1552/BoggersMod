@@ -21,5 +21,7 @@
 
     "item.boggers.cypress_boat": "Cypress Boat",
 	
-    "itemGroup.boggers_item_group": "Boggers"
+    "itemGroup.boggers_item_group": "Boggers",
+
+    "biome.boggers.bog_biome": "Bog"
 }
